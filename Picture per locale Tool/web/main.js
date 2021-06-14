@@ -43,8 +43,8 @@ uploadBtn.addEventListener("click", function generateData(e) {
 function viewMessage(msg) {
   folder_path_val.innerText = "";
   merchant_id.value = "";
-  msgElement.innerText = msg;
-  msgElement.style.color = "green";
+  msgElement.innerText = msg[0];
+  msgElement.style.color = msg[1];
   loadingButtonUpload.style.display = "none";
   uploadBtn.style.display = "block";
 }
